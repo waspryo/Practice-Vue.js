@@ -6,7 +6,7 @@ const app = new Vue({
     },
     methods: {
         addTodo() {
-            console.log('form submitted')
+            console.log(this.newTodo)
         },
     },
 })
