@@ -13,5 +13,10 @@ const app = new Vue({
             })
             this.newTodo = '';
         },
+        removeTodo(todo) {
+            const todoIndex = this.todos.indexOf(todo);
+            // 一番最後の値を取り除く
+            this.todos.splice(todoIndex, 1)
+        }
     },
 })
