@@ -17,6 +17,11 @@ const app = new Vue({
             const todoIndex = this.todos.indexOf(todo);
             // 一番最後の値を取り除く
             this.todos.splice(todoIndex, 1)
+        },
+        allDone() {
+            this.todos.forEach(todo => {
+                todo.done = true;
+            })
         }
     },
 })
